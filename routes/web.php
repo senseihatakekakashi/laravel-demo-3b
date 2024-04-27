@@ -14,15 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $name = 'John Doe'; //let's assume that this data came from the database
-    $sex = 'Male';
-
-    return view('landing-page.index', [
-        'name' => $name,
-        'sex' => $sex
-    ]);
-});
-
-Route::get('/profile', function () {    
-    return view('landing-page.profile');
+    return view('pages.dashboard');
 });
